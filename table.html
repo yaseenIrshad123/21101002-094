@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest Transactions</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .table th, .table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        .table th {
+            background-color: #f2f2f2;
+        }
+        .table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .table tr:hover {
+            background-color: #f2f2f2;
+        }
+        .table img {
+            vertical-align: middle;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .badge {
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+        .badge-success {
+            background-color: #28a745;
+            color: #fff;
+        }
+        .badge-danger {
+            background-color: #dc3545;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Latest Transactions</h2>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th style="width: 20px;"><input type="checkbox" class="form-check-input" id="customCheck1"></th>
+                        <th>Order ID</th>
+                        <th>Billing Name</th>
+                        <th>IP Address</th>
+                        <th>Order Date</th>
+                        <th>Total</th>
+                        <th>Payment Method</th>
+                        <th>Payment Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox" class="form-check-input" id="customCheck2"></td>
+                        <td><a href="#">#gh3546</a></td>
+                        <td><img src="assets/images/users/avatar-2.jpg" alt=""> Hassan</td>
+                        <td>cs562xf452dd</td>
+                        <td>05 Oct, 2022</td>
+                        <td>$300</td>
+                        <td><i class="fab fa-cc-mastercard"></i> Paypal</td>
+                        <td><span class="badge badge-success">Completed</span></td>
+                        <td>
+                            <a href="#" class="btn btn-success btn-sm"><i class="mdi mdi-pencil"></i></a>
+                            <a href="#" class="btn btn-danger btn-sm"><i class="mdi mdi-delete"></i></a>
+                        </td>
+                    </tr>
+                    <!-- Add more rows here -->
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox" class="form-check-input" id="customCheck2"></td>
+                        <td><a href="#">#hf65747</a></td>
+                        <td><img src="assets/images/users/avatar-2.jpg" alt="">Husnain</td>
+                        <td>cs562xf452dd</td>
+                        <td>07 Oct, 2022</td>
+                        <td>$400</td>
+                        <td><i class="fab fa-cc-mastercard"></i> NBP</td>
+                        <td><span class="badge badge-success">Completed</span></td>
+                        <td>
+                            <a href="#" class="btn btn-success btn-sm"><i class="mdi mdi-pencil"></i></a>
+                            <a href="#" class="btn btn-danger btn-sm"><i class="mdi mdi-delete"></i></a>
+                        </td>
+                    </tr>
+                    <!-- Add more rows here -->
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox" class="form-check-input" id="customCheck2"></td>
+                        <td><a href="#">#MB2540</a></td>
+                        <td><img src="assets/images/users/avatar-2.jpg" alt=""> Usama</td>
+                        <td>cs562xf452dd</td>
+                        <td>07 Oct, 2022</td>
+                        <td>$400</td>
+                        <td><i class="fab fa-cc-mastercard"></i> Faisal Bank</td>
+                        <td><span class="badge badge-success">Completed</span></td>
+                        <td>
+                            <a href="#" class="btn btn-success btn-sm"><i class="mdi mdi-pencil"></i></a>
+                            <a href="#" class="btn btn-danger btn-sm"><i class="mdi mdi-delete"></i></a>
+                        </td>
+                    </tr>
+                    <!-- Add more rows here -->
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox" class="form-check-input" id="customCheck2"></td>
+                        <td><a href="#">#MB2540</a></td>
+                        <td><img src="assets/images/users/avatar-2.jpg" alt=""> Yaseen</td>
+                        <td>cs562xf452dd</td>
+                        <td>07 Oct, 2022</td>
+                        <td>$400</td>
+                        <td><i class="fab fa-cc-mastercard"></i> UBL</td>
+                        <td><span class="badge badge-success"> not Completed</span></td>
+                        <td>
+                            <a href="#" class="btn btn-success btn-sm"><i class="mdi mdi-pencil"></i></a>
+                            <a href="#" class="btn btn-danger btn-sm"><i class="mdi mdi-delete"></i></a>
+                        </td>
+                    </tr>
+                    <!-- Add more rows here -->
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox" class="form-check-input" id="customCheck2"></td>
+                        <td><a href="#">#MB2540</a></td>
+                        <td><img src="assets/images/users/avatar-2.jpg" alt=""> Ahmed</td>
+                        <td>cs562xf452dd</td>
+                        <td>07 Oct, 2022</td>
+                        <td>$400</td>
+                        <td><i class="fab fa-cc-mastercard"></i> Meeezan</td>
+                        <td><span class="badge badge-success">Completed</span></td>
+                        <td>
+                            <a href="#" class="btn btn-success btn-sm"><i class="mdi mdi-pencil"></i></a>
+                            <a href="#" class="btn btn-danger btn-sm"><i class="mdi mdi-delete"></i></a>
+                        </td>
+                    </tr>
+                    <!-- Add more rows here -->
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox" class="form-check-input" id="customCheck2"></td>
+                        <td><a href="#">#MB2540</a></td>
+                        <td><img src="assets/images/users/avatar-2.jpg" alt=""> Hamza</td>
+                        <td>cs562xf452dd</td>
+                        <td>07 Oct, 2022</td>
+                        <td>$400</td>
+                        <td><i class="fab fa-cc-mastercard"></i> paynoeer</td>
+                        <td><span class="badge badge-success">Completed</span></td>
+                        <td>
+                            <a href="#" class="btn btn-success btn-sm"><i class="mdi mdi-pencil"></i></a>
+                            <a href="#" class="btn btn-danger btn-sm"><i class="mdi mdi-delete"></i></a>
+                        </td>
+                    </tr>
+                    <!-- Add more rows here -->
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox" class="form-check-input" id="customCheck2"></td>
+                        <td><a href="#">#Md2540</a></td>
+                        <td><img src="assets/images/users/avatar-2.jpg" alt=""> Abdullah</td>
+                        <td>cs562xf452dd</td>
+                        <td>07 Oct, 2022</td>
+                        <td>$400</td>
+                        <td><i class="fab fa-cc-mastercard"></i> paypal</td>
+                        <td><span class="badge badge-success">Completed</span></td>
+                        <td>
+                            <a href="#" class="btn btn-success btn-sm"><i class="mdi mdi-pencil"></i></a>
+                            <a href="#" class="btn btn-danger btn-sm"><i class="mdi mdi-delete"></i></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Book - eCommerce HTML5 Template</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style type="text/css">
+            .inlineList li {
+                display: inline;
+                list-style: none;
+                margin-right: 30px;
+            }
+            .float-right {
+                float: right;
+            }
+            .navbar {
+                background-color: #e5e5e5;
+            }
+            .top-bar {
+                background-color: #f44344;
+                padding: 5px 5px;
+                color: #e5e5e5;
+                height: 76px;
+            }
+            .top-bar .container {
+                background-color: #f44344;
+
+            }
+            .top-bar a {
+                text-decoration: none;
+                color: #e5e5e5;
+            }
+            .container{
+                padding: 20px 20px;
+            }
+            .carousel-item-container {
+              display: flex;
+            }
+            .carousel-item-content {
+              flex: 1;
+              padding: 20px;
+              text-align: left;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              height: 100%;
+            }
+
+            .carousel-item-content h2 {
+              font-size: 24px;
+              margin-bottom: 10px;
+            }
+            .animated h4{
+                color: #f44344;
+                font-size: 70px;
+                line-height: 1;
+                line-height: 53px;
+                text-transform: uppercase;
+                font-weight: 400;
+            }
+            .animated h4 a{
+                color: black;
+                text-transform: uppercase;
+            }
+            .animated .slider-title-dark{
+                color: black;
+                text-transform: uppercase;
+            }
+            .animated h5{
+                color: #000;
+                font-size: 80px;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            .animated p{
+                color: #383838;
+                font-size: 20px;
+                line-height: 26px;
+                margin: 16px 0 46px;
+                width: 35%;
+            }
+
+            .carousel-item-content p {
+              font-size: 16px;
+              line-height: 1.5;
+            }
+            .btn-danger:hover {
+                box-shadow: 0 10px 35px -7px rgba(244, 67, 68, 0.9);
+                transform: translateY(-3px);
+            }
+            .btn-danger {
+                background-color: #f44344;
+                border-radius: 50px;
+                color: #ffffff;
+                display: inline-block;
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 1;
+                padding: 15px 30px 14px;
+                text-transform: uppercase;
+            }
+            .book-banner {
+                display: flex;
+                flex-direction: column;
+                justify-content: center; /* Align content vertically centered */
+                align-items: flex-end; /* Align content right-aligned */
+                height: 400px; /* Adjust this as needed */
+                padding-right: 50px;
+                letter-spacing: 4px;
+            }
+            .book-banner.style2 {
+                align-items: center; /* Align content right-aligned */
+            }
+            .book-banner.style1 h2 {
+                font-size: 30px;
+                font-weight: 800;
+                letter-spacing: 4px;
+                line-height: 45px;
+                text-transform: uppercase;
+            }
+            .book-banner.style1 {
+                text-align: right;
+            }
+            .book-banner.style2 {
+                text-align: center;
+            }
+            .book-banner.style2 h2{
+                letter-spacing: 12px;
+                font-weight: 700;
+                text-transform: uppercase;
+                border-bottom: 1px dashed #333;
+                border-width: ;
+            }
+            .row-banners {
+                display: flex;
+                justify-content: space-between; /* This creates space between columns */
+                margin: 10px; /* You can adjust the margin value as needed */
+            }
+            .banners {
+                background-color: lightgray;
+                padding: 10px;
+                box-sizing: border-box;
+                width: 47%;
+            }
+            .section > h2 {
+                 display: inline-block;
+                 font-size: 60px;
+                 font-weight: bold;
+                 letter-spacing: 1px;
+                 margin: 30px;
+                 position: relative;
+                 
+            }
+            .nav-tabs.nav{
+                padding-left: 100px;
+                margin-top:10px;
+                margin-bottom: 100px;
+                font-weight: bold;
+                letter-spacing: 1px;
+                /* margin: 0; */
+                text-transform: capitalize;
+                transition: all 0.3s ease 0s;
+                font-size: 22px;
+            }
+            .nav-item{
+               margin-right: 60px;
+                color: red;
+            }
+            .nav-link{
+                color: #999999;
+            }
+            .nav-item h4{
+                color: #383838;
+            }
+            .card-title{
+                font-weight: bold;
+            }
+            .card-text p{
+                font-size: 1.2rem;
+            }
+            .checked{
+                color: #999999;
+            }
+             .section > h2 {
+                 display: inline-block;
+                 font-size: 50px;
+                 font-weight: bold;
+                 letter-spacing: 1px;
+                 margin: 30px;
+                 position: relative;
+            }
+            .writer-content h4{
+                color: #999999;
+                font-size: 24px;
+                font-weight: bold;
+                margin-bottom: 6px;
+                position: relative
+                    margin-top: 0;
+            }
+        </style>
+            
+    </head>
+
+    <body>
+        <div class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        Contact us - 00 221 225 123-30  or  Email: info@domain.com
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="inlineList float-right">
+                            <li><a href="login.html"><i class="fa fa-user"></i> login</a></li>
+                            <li><a href="register.html"><i class="fa fa-cog"></i> register</a></li>
+                            <li><a href="wishlist.html"><i class="fa fa-heart"></i> wishlist</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="navbar navbar-expand-lg navbar-white bg-white">
+          <div class="container">
+             <div class="d-flex justify-content-around">
+            
+            <a class="navbar-brand" href="#">
+                <img src="https://htmldemo.net/ezone/ezone/assets/img/logo/logo.png">
+            </a>
+            </div>
+            <ul class="inlineList">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pages</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </ul>
+        </nav>
+        <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="mask flex-center">
+                    <div class="container">
+                      <div class="row align-items-center">
+                        <div class="col-md-7 col-12 order-md-1 order-2">
+                            <div class="animated ">
+                              <h4 class="slider-title">Knowledge <span class="slider-title-dark">is</span></h4>
+                              <h5 class="slider-title-2">Power</h5>
+                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                        <button class="btn btn-danger">Buy Now</button></div>
+                        <div class="col-md-5 col-12 order-md-2 order-1"><img src="https://i.imgur.com/NKvkfTT.png" class="mx-auto" alt="slide"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="mask flex-center">
+                    <div class="container">
+                      <div class="row align-items-center">
+                        <div class="col-md-7 col-12 order-md-1 order-2">
+                          <h4>Present your <br>
+                            awesome product</h4>
+                          <p>Lorem ipsum dolor sit amet. Reprehenderit, qui blanditiis quidem rerum <br>
+                            necessitatibus praesentium voluptatum deleniti atque corrupti.</p>
+                          <a href="#">BUY NOW</a> </div>
+                        <div class="col-md-5 col-12 order-md-2 order-1"><img src="https://i.imgur.com/duWgXRs.png" class="mx-auto" alt="slide"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="mask flex-center">
+                    <div class="container">
+                      <div class="row align-items-center">
+                        <div class="col-md-7 col-12 order-md-1 order-2">
+                          <h4>Present your <br>
+                            awesome product</h4>
+                          <p>Lorem ipsum dolor sit amet. Reprehenderit, qui blanditiis quidem rerum <br>
+                            necessitatibus praesentium voluptatum deleniti atque corrupti.</p>
+                          <a href="#">BUY NOW</a> </div>
+                        <div class="col-md-5 col-12 order-md-2 order-1"><img src="https://i.imgur.com/DGkR4OQ.png" class="mx-auto" alt="slide"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
+        </div>
+        <div class="container">
+            <!-- start row -->
+            <div class="row row-banners">
+                <div class="col-md-6 banners" style="background: url(https://htmldemo.net/ezone/ezone/assets/img/banner/13.jpg);background-repeat: no-repeat;background-size: cover; ">
+                    <div class="book-banner style1">
+                        <h3>Big Sell For <br>December</h3>
+                        <h2>50% OFF</h2>
+                        <button class="btn btn-danger">Buy Now</button>
+                    </div>
+                </div>
+                <div class="col-md-6 banners" style="background: url(https://htmldemo.net/ezone/ezone/assets/img/banner/14.jpg);background-repeat: no-repeat;background-size: cover; ">
+                    <div class="book-banner style2">
+                        <h2>Learn More</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <button class="btn btn-danger">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="section text-center ">
+                <h2> Best Products  </h2>
+                <ul class="nav nav-tabs" style="border-bottom: 0px solid #dee2e6;">
+                    <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#" style="border: 0px solid transparent;" ><h4>Fiction</h4> </a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#" style="border: 1px solid transparent;">Satire </a>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#"style="border: 0px solid transparent;">Anthologies</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#" style="border: 1px solid transparent";>Art</a>
+                    </li> 
+                    <li class="nav-item">
+                    <a class="nav-link" href="#" style="border: 1px solid transparent";>Journals</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#" style="border: 1px solid transparent";>History</a>
+                    </li>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card" style=" border: 0px solid rgba(0,0,0,.125);">
+                          <img class="card-img-top" src="https://htmldemo.net/ezone/ezone/assets/img/product/book/1.jpg" alt="Card image cap">
+                          <div class="card-body">
+                            <center><h5 class="card-title">World At War Vol2</h5></center>
+                            <center><p class="card-text">By: Arif Khan.</p></center>
+                             <div class="product-rating">
+                                    <center><span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star "></span>
+                                    <span class="fa fa-star "></span></center>
+                             </div>       
+                          </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card"  style=" border: 0px solid rgba(0,0,0,.125);">
+                          <img class="card-img-top" src="https://htmldemo.net/ezone/ezone/assets/img/product/book/2.jpg" alt="Card image cap">
+                          <div class="card-body">
+                            <center><h5 class="card-title">World At War Vol2</h5></center>
+                            <center><p class="card-text">By: Arif Khan.</p></center>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style=" border: 0px solid rgba(0,0,0,.125);">
+                          <img class="card-img-top" src="https://htmldemo.net/ezone/ezone/assets/img/product/book/3.jpg" alt="Card image cap">
+                          <div class="card-body">
+                            <center><h5 class="card-title">World At War Vol2</h5></center>
+                            <center><p class="card-text">By: Arif Khan.</p></center>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style=" border: 0px solid rgba(0,0,0,.125);">
+                          <img class="card-img-top" src="https://htmldemo.net/ezone/ezone/assets/img/product/book/4.jpg" alt="Card image cap">
+                          <div class="card-body">
+                            <center><h5 class="card-title">World At War Vol2</h5></center>
+                            <center><p class="card-text">By: Arif Khan.</p></center>
+                             <div class="product-rating">
+                                    <center><span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star "></span>
+                                    <span class="fa fa-star "></span></center>
+                             </div>       
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card" style=" border: 0px solid rgba(0,0,0,.125);">
+                          <img class="card-img-top" src="https://htmldemo.net/ezone/ezone/assets/img/product/book/1.jpg" alt="Card image cap">
+                          <div class="card-body">
+                            <center><h5 class="card-title">World At War Vol2</h5></center>
+                            <center><p class="card-text">By: Arif Khan.</p></center>
+                             <div class="product-rating">
+                                    <center><span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star "></span>
+                                    <span class="fa fa-star "></span></center>
+                             </div>       
+                          </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card"  style=" border: 0px solid rgba(0,0,0,.125);">
+                          <img class="card-img-top" src="https://htmldemo.net/ezone/ezone/assets/img/product/book/2.jpg" alt="Card image cap">
+                          <div class="card-body">
+                            <center><h5 class="card-title">World At War Vol2</h5></center>
+                            <center><p class="card-text">By: Arif Khan.</p></center>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style=" border: 0px solid rgba(0,0,0,.125);">
+                          <img class="card-img-top" src="https://htmldemo.net/ezone/ezone/assets/img/product/book/3.jpg" alt="Card image cap">
+                          <div class="card-body">
+                            <center><h5 class="card-title">World At War Vol2</h5></center>
+                            <center><p class="card-text">By: Arif Khan.</p></center>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style=" border: 0px solid rgba(0,0,0,.125);">
+                          <img class="card-img-top" src="https://htmldemo.net/ezone/ezone/assets/img/product/book/4.jpg" alt="Card image cap">
+                          <div class="card-body">
+                            <center><h5 class="card-title">World At War Vol2</h5></center>
+                            <center><p class="card-text">By: Arif Khan.</p></center>
+                             <div class="product-rating">
+                                    <center><span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star "></span>
+                                    <span class="fa fa-star "></span></center>
+                             </div>       
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card" style=" border: 0px solid rgba(0,0,0,.125);">
+                          <img class="card-img-top" src="https://htmldemo.net/ezone/ezone/assets/img/product/book/1.jpg" alt="Card image cap">
+                          <div class="card-body">
+                            <center><h5 class="card-title">World At War Vol2</h5></center>
+                            <center><p class="card-text">By: Arif Khan.</p></center>
+                             <div class="product-rating">
+                                    <center><span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star "></span>
+                                    <span class="fa fa-star "></span></center>
+                             </div>       
+                          </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style=" border: 0px solid rgba(0,0,0,.125);">
+                          <img class="card-img-top" src="https://htmldemo.net/ezone/ezone/assets/img/product/book/1.jpg" alt="Card image cap">
+                          <div class="card-body">
+                            <center><h5 class="card-title">World At War Vol2</h5></center>
+                            <center><p class="card-text">By: Arif Khan.</p></center>
+                             <div class="product-rating">
+                                    <center><span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star "></span>
+                                    <span class="fa fa-star "></span></center>
+                             </div>       
+                          </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+            <div class="section text-center ">
+                <h2>Top Writer In this Month</h2>
+             <div class="row">
+                <div class="col-md-4">
+                    <div class="writer-wrapper">
+                        <img src="https://htmldemo.net/ezone/ezone/assets/img/product/book/11.jpg" alt="">
+                        <div class="writer-content">
+                            <h4>Mildred Turner</h4>
+                            <span>Book Writer & <br>Member of bishwo shahitto kendro</span>
+                        </div>
+                    </div>
+                </div>
+             </div>
+
+
+
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+       
+    
+</html>
+https://htmldemo.net/ezone/ezone/assets/img/product/book/1.jpg
